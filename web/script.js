@@ -5,7 +5,10 @@
  */
 $(document).ready(function () {
     
-
+    $('ul.sticky_notes li').click(function(){
+       $(this).unbind('mouseenter mouseleave');
+       console.log("hello");
+    });
     getFromServer();
     
     /*Navbar functions */
@@ -96,7 +99,7 @@ $(document).ready(function () {
 
     }
 
-    function createNotes(title, orders, status, tPrice) {
+    function createNotes(title, orders, status, tPrice,orderPlacedAt) {
         var header = '<h4>Table No.' + title + '</h4>';
         var desc = '<p>Orders: ' + orders[0];
 
@@ -109,13 +112,13 @@ $(document).ready(function () {
 
 
         desc += '</p>';
-        var statuses = '<p>Status: ' + status + '</p>';
+        var statuses = '<p>Note: ' + status + '</p>';
         var newPrice = '<p>Total Price: ' + tPrice + '</p>';
-        var d = new Date(); // for now
+         // for now
 
 
 
-        var time = '<p>Time: ' + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + '</p>';
+        var time = '<p>Time: '+ orderPlacedAt+ '</p>';
 
         var colours = new Array();
         colours[0] = 'green';
@@ -213,7 +216,7 @@ $(document).ready(function () {
                         itemList.push(orders[i].items[j].foodId);
                         console.log(orders[i].items[j].foodId);
                     }
-                    createNotes(orders[i].tableNo, itemList, orders[i].status, orders[i].total);
+                    createNotes(orders[i].tableNo, itemList, orders[i].status, orders[i].total,orders[i].orderPlacedAt);
 
 
 

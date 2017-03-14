@@ -83,7 +83,7 @@ and open the template in the editor.
 
             <tr><td>Table No.</td><td><input type="text" id="table" value="" /></td></tr>
 
-            <tr><td>Status</td><td><input type="text" id="status" value="" /></td></tr>
+            <tr><td>Note</td><td><input type="text" id="status" value="" /></td></tr>
             <tr><td>Orders</td><td><input type="text" placeholder="Dish No." inputmode="numeric" id="orders" value="" name="dishNo[]"/></td></tr>
             <tr id="delafter"><td colspan="2"><a class="deleteButton" id="delete" title="">Refresh</a></td></tr>
         </table>

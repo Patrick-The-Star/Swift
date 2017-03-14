@@ -211,11 +211,11 @@ ul.sticky_notes li:hover{
     .container>.navbar-header{
         margin-left: 0px !important;
     }
-    
+
     #collapsable-nav ul{
         margin-right: -20px;
     }
-    
+
     #nav-list a {
         color: #951C49;
         text-align: center;
@@ -234,13 +234,13 @@ ul.sticky_notes li:hover{
     div.container {
         width: 100%;
     }
-    
+
     .container>.navbar-header{
         margin-left: -100px !important;
-        
+
     }
-    
-    
+
+
 
     #logo-img {
         background: url('../images/swift.png') no-repeat center center;
@@ -275,11 +275,11 @@ ul.sticky_notes li:hover{
     a h1{
         font-size: 1.4em;
     }
-    
+
     #collapsable-nav ul{
         margin-right: -15px;
     }
-    
+
     #nav-list a {
         color: #951C49;
         text-align: center;
@@ -289,39 +289,39 @@ ul.sticky_notes li:hover{
     div.container {
         width: 100%;
     }
-    
+
     .container>.navbar-header{
         margin-left: 10px !important;
-        
+
     }
 
 }
 
 @media (max-width:767px){
-    
-    body input[type=button]{
-    display:block;
-    width:25%;
-    height:43px;
-    margin-top: 10px;
-    margin-left:auto;
 
-    margin-right: auto;
-}
-    
+    body input[type=button]{
+        display:block;
+        width:25%;
+        height:43px;
+        margin-top: 10px;
+        margin-left:auto;
+
+        margin-right: auto;
+    }
+
     #sublogo img{
         height:2em;
         width:2em;
-        margin-left:0.2em;
+       
     }
 
     #collapsable-nav a { /* Collapsed nav menu text */
         font-size: 1.2em;
-        
-    }
-    
-    
-    
+        margin-left:4em;
+   }
+
+
+
     #collapsable-nav ul{
         margin-left: -100px;
     }
@@ -340,11 +340,15 @@ ul.sticky_notes li:hover{
     .navbar-brand h1{
         font-size: 1.1em;
     }
-    
+
     #newTasks{
         margin-left: 8px;
         margin-right:8px;
     }
-    
-    
+
+    ul.sticky_notes li{
+
+        font-family: 'Short Stack' !important;
+    }
+
 }
